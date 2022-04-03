@@ -8,7 +8,7 @@ Make Home Lab with RaspberryPi and Vmware
  - 32 GB Pendrive
  - 64 GB Pendrive
 
-# Download
+# Downloads
 
 - raspberry installer: https://www.raspberrypi.com/software/
 - VMWare Installer, registry here ( free). (ISO ESXi Arm)Edition: https://flings.vmware.com/esxi-arm-edition
@@ -106,11 +106,9 @@ https://ubuntu.com/download/server/arm
 
 And continue 
 
-# Connect Vagrant
-
-https://github.com/josenk/vagrant-vmware-esxi
-
 # Vcenter
+
+Later
 
 https://www.vmware.com/products/vcenter-server.html
 
