@@ -16,7 +16,7 @@ Make Home Lab with RaspberryPi and Vmware
 - Latest Raspberry Pi Firmware: https://github.com/raspberrypi/firmware
 - UEFI Raspberry Pi Firmware latest: https://github.com/pftf/RPi4/releases
 
-# Update FW Raspberry
+# Update FW of Raspberry
 
 - Install raspberry installer: 
 - plug in Rasp SD Card
