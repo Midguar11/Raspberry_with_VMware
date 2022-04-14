@@ -1,4 +1,4 @@
-# Raspberry_with_VMware
+# VMware_on_Raspberry 
 
 Make Home Lab with RaspberryPi and Vmware
 
