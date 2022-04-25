@@ -97,12 +97,22 @@ https://ubuntu.com/download/server/arm
       etc/init.d/usbarbitrator stop
       chkconfig usbarbitrator off
 
+if you use Dell or Other server
+
+    partedUtil mklabel /dev/disks/mpx.vmhba33:C0:
+    
+Calculate end sector:
+   
+    eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba33:C0: | tail -1 | awk '{print $1 " \\* " $2 " \\* " $3}') - 1
+    
+
 - Back to VM control check Storage/Devices
 - Select USB devices from list
 - Action/Clear partition table
 - New datastore
 - Datastore name: " Virtual_lab_01_HDD_1GB"
 - FullDisk / Finish
+
 
 And continue 
 
