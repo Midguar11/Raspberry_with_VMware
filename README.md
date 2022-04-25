@@ -99,12 +99,13 @@ https://ubuntu.com/download/server/arm
 
 if you use Dell or Other server
 
-    partedUtil mklabel /dev/disks/mpx.vmhba33:C0:
+    partedUtil mklabel /dev/disks/mpx.vmhba33:C0:xxxxxx
     
 Calculate end sector:
    
-    eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba33:C0: | tail -1 | awk '{print $1 " \\* " $2 " \\* " $3}') - 1
-    
+    eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba33:C0:xxxxx | tail -1 | awk '{print $1 " \\* " $2 " \\* " $3}') - 1
+    partedUtil setptbl /dev/disks/mpx.vmhba33:C0:xxxxxx gpt "1 2048 1953455804 AA31E02A400F11DB9590000C2911D1B8 0"
+    vmkfstools -C vmfs6 -S USB-Datastore_1TB /dev/disks/mpx.vmhba33:C0xxxx:1
 
 - Back to VM control check Storage/Devices
 - Select USB devices from list
